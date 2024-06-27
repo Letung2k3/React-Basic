@@ -22,7 +22,14 @@ class MyComponent extends React.Component{
       objCourse:currentCourse
     })
    }
+   componentDidUpdate=(prevProps,prevState)=>{
+      console.log('>>run đi update: ',"prev state: ",prevState," current state: ",this.state)
+   }
+   componentDidMount=()=>{
+    console.log('>>> run component đi mount : ')
+   }
    render(){
+    console.log(">>state bash here: ",this.state)
     let {objCourse} = this.state;
     return(
       <>

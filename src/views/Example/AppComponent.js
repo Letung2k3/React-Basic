@@ -1,4 +1,5 @@
 import React from "react";
+import "./demo.scss";
 class AppComponent extends React.Component{
     state = {
         courseName:"",
@@ -46,7 +47,7 @@ class AppComponent extends React.Component{
                        onChange={(Event)=>this.handleDescription(Event)}
                  />
                  <br/>
-                 <button type="submit" onClick={(Event)=>this.handleSubmitButton(Event)}>Submit</button>
+                 <button className="btnSubmit" type="submit" onClick={(Event)=>this.handleSubmitButton(Event)}>Submit</button>
             </form>
         )
     }

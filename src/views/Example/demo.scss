@@ -1,0 +1,16 @@
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$mySize:16px;
+.btnSubmit{
+    color: $myColor;
+    font:{
+        family:$myFont;
+        size: $mySize;
+    }
+    padding: {
+        top:5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+    }
+}
